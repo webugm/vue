@@ -29,22 +29,32 @@
       <div class="container text-center">
         <h1>{{title}}</h1>
         <hr>
-        {{message}}
+        {{mail}}
         <hr>
         <p>
-          <input type="text" v-model="message">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" v-model="mail">
+            </div>
+          </form>
+          
+        </p>
+        <p>
+          <div>{{ $data | json }}</div>
         </p>
       </div>
 
     </div>
 
     <script>
+      var data = {
+        title:"育將電腦工作室",
+        mail:'tawan158@ugm.com.tw'
+      }
       new Vue({
         el:'#app',
-        data:{
-          title:"育將電腦工作室",
-          message:"哈囉！VUE"
-        }
+        data:data
       });
     </script>
 
