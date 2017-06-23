@@ -8,8 +8,9 @@
     <title>vue</title>
 
     <!-- Bootstrap -->
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://cdn.bootcss.com/prettify/r298/prettify.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 高亮度語法 -->
+    <link href="class/prettify/prettify.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,9 +20,8 @@
     <![endif]-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="class/jquery/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
       
   </head>
   <body>      
@@ -32,39 +32,15 @@
       </div>      
     </div>
 
-    <div class="container">
-      <ol>
-        <li>引入：<br>
-            <pre>&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js&quot;&gt;&lt;/script&gt;</pre>
-        </li>
-        <li>HTML：<br>
-          是不是很像 PHP的smarty
-          <pre>     
-            &lt;div id=&quot;app&quot;&gt;
-              &lt;div class=&quot;container text-center&quot;&gt;
-                &lt;h1&gt;{{title}}&lt;/h1&gt;
-                {{message}}
-              &lt;/div&gt;      
-            &lt;/div&gt;
-          </pre>          
-        </li>
-        <li>JS：<br>
-          <pre>
-            &lt;script&gt;
-              new Vue({
-                el:&#x27;#app&#x27;,
-                data:{
-                  title:&quot;育將電腦工作室&quot;,
-                  message:&quot;哈囉！VUE&quot;
-                }
-              });
-            &lt;/script&gt;          
-          </pre>          
-        </li>
-      </ol>
-    </div>
 
 
+    <!-- bootstrap v3 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 高亮度語法 -->
+    <script src="class/prettify/prettify.js"></script>    
+    
+    <!-- vue -->
+    <script src="class/vue/vue.min.js"></script>
     <script>
       new Vue({
         el:'#app',
@@ -74,8 +50,5 @@
         }
       });
     </script>
-
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>    
-    <script src="http://cdn.bootcss.com/prettify/r298/prettify.js"></script>
   </body>
 </html>
