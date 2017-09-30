@@ -29,11 +29,20 @@
   </head>
   <body>      
     <div id="app">
-      <div class="container text-center">
-        {{message}}
-      </div>      
+      <div class="container" style="margin-top: 50px;">
+        <h1 class="text-center">綁定DOM元素的屬性</h1>
+        <span v-bind:title="message">鼠標懸停，觀看此處綁定的動態訊息</span>   
+      </div> 
     </div>
-
+    <div class="container">
+      <hr>  
+      <a href="https://jsfiddle.net/webugm/8umq5a65/" target="_blank">jsfiddle</a> 
+    </div>
+    <!-- 
+    <div class="container">
+      <pre></pre>
+    </div>
+    -->
 
 
     <!-- bootstrap v3 -->
@@ -47,9 +56,9 @@
       var app = new Vue({
         el:'#app',
         data:{
-          message:"哈囉！VUE"
+          message: "頁面加載：" + new Date()
         }
       });
     </script>
-  </body>
+  </boDy>
 </html>
